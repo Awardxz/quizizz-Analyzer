@@ -10,6 +10,8 @@ input.addEventListener('click',() => {
         const result = response.data
 
         console.log(result);
+        const resultContainer = document.querySelector('.result');
+        resultContainer.innerHTML = "";
         createElement(result);
     })
    } 
